@@ -14,4 +14,4 @@ public class swapping
 		y=t;
 		System.out.println("Number after swapping x="+x+"and y="+y);
 		}
-	}
+}
