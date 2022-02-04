@@ -21,14 +21,14 @@ public class fileexp2
 			System.out.println("File Created ");
 	  
 	FileOutputStream fi=new FileOutputStream("text.txt");
-	System.out.print("\nEnter the String: ");
+	System.out.print("\nEnter the sentence: ");
 	word=sc.nextLine();
 	byte[] Word=word.getBytes();
 	fi.write(Word);
 	fi.flush();
 	fi.close();
 	FileInputStream file=new FileInputStream("text.txt");
-	System.out.print("The String is: ");
+	System.out.print("The entered sentence is: ");
 	
 	  while((i=file.read())!=-1)
 	   {
