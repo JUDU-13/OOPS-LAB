@@ -12,25 +12,25 @@ public class FILEHANDLINGPROGRAMS1
 	{
 	  Scanner sc=new Scanner(System.in);
 	  int i,n,num;
-	  File fi = new File("number.txt");
+	  File fo = new File("number.txt");
 	  
-	   if(fi.exists())
+	   if(fo.exists())
 			System.out.println("File Exists");
 		 else
 			System.out.println("File Created\n");
 	  
-		FileOutputStream f=new FileOutputStream("number.txt");
+		FileOutputStream fi=new FileOutputStream("number.txt");
 		System.out.print("\nEnter the number of elements: ");
 		n=sc.nextInt();
 		
 		 for(i=0;i<n;i++)
 		   {
-			System.out.print("\nEnter the number "+(i+1)+": ");
+			System.out.print("\nEnter the elements "+(i+1)+": ");
 			num=sc.nextInt();
-			f.write(num);
+			fi.write(num);
 		   }
 		
-		f.close();
+		fi.close();
 		i=0;
 		FileInputStream file=new FileInputStream("number.txt");
 		System.out.print("\n\nThe elements are: ");
