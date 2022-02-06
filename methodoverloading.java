@@ -1,4 +1,4 @@
-package java_pgms;
+package javacode;
 import java.util.Scanner;
 class method
 {
