@@ -7,11 +7,11 @@ public class ArithmeticException01
     {
      int n1,d;
      Scanner sc = new Scanner(System.in);
-     System.out.println("Enter the no: ");
+     System.out.println("Enter the number: ");
      n1=sc.nextInt();
      try
       {
-       d = n1/0;
+       d=n1/0;
        System.out.println("Result: "+d);
       }
      catch(ArithmeticException e1)
@@ -23,4 +23,4 @@ public class ArithmeticException01
 	   System.out.println("End of Operation");
 	  }
 	}
-  }
+    }
