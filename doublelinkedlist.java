@@ -11,9 +11,9 @@ public class doublelinkedlist
 	 no.add(17);
 	 no.add(19);
 	 System.out.println("List : " + no);
-	 int num=no.get(2);
+	 int num=no.get(3);
 	 System.out.println("Element to be removed : "+num);
-	 int ind= no.indexOf(13);
+	 int ind= no.indexOf(17);
 	 System.out.println("Position of  is "+ind);
 	 int removedNumber = no.remove(3);
 	 System.out.println("Removed Element: "+removedNumber);
